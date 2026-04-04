@@ -1,0 +1,39 @@
+# Credentials & Secrets
+credentials.json
+client_secret.json
+*.pem
+*.key
+.env
+.env.*
+
+# API Keys & Tokens
+*api_key*
+*token*
+*secret*
+
+# Logs
+upload_log.txt
+*.log
+
+# State that shouldn't be public
+used_facts.json
+used_videos.txt
+telegram_messages.json
+
+# Temp files
+/tmp/
+*.tmp
+*.temp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Large binaries
+ffmpeg.tar.xz
+ffmpeg-master-*/
+*.chrome-headless-shell*
+chrome-headless-shell*
