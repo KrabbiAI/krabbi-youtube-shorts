@@ -28,7 +28,7 @@ download_clip() {
     local animal_terms=$2
     local clip_file=""
     
-    python3 << PYEOF >> $LOG 2>&1
+    python3 << PYEOF 2>> $LOG
 import requests, os, random, time
 
 API = "$PEXELS_API"
@@ -202,15 +202,15 @@ with open('$BASE/animal_facts.json') as f:
     data = json.load(f)
 a = random.choice(data['animals'])
 fact = random.choice(a['facts'])
-words = len(fact.split())
+words = len(fact['text'].split())
 print(2 if words < 43 else 1)
 ")
     # Generate TTS with temp filename, will be renamed with animals
     python3 $BASE/facts_search.py $BASE/audio/fact_tmp.mp3 $count
     
-    # Find the renamed TTS file (contains animal names)
-    TTS_FILE=$(ls $BASE/audio/fact_*.mp3 2>/dev/null | grep -v fact_tmp | head -1)
-    ANIMALS_FILE="${TTS_FILE}_animals.txt"
+    # Find the renamed TTS file (most recent .mp3, not ambient)
+    TTS_FILE=$(ls -t $BASE/audio/*.mp3 2>/dev/null | grep -v fact_tmp | grep -v ambient | head -1)
+    ANIMALS_FILE="${TTS_FILE%.*}_animals.txt"
     
     if [ -z "$TTS_FILE" ] || [ ! -f "$TTS_FILE" ]; then
         log "ERROR: TTS file not found after generation!"
@@ -281,7 +281,7 @@ from googleapiclient.http import MediaFileUpload
 
 # Read animal names from sidecar file
 try:
-    with open('$ANIMALS_FILE', 'r') as f:
+    with open("$ANIMALS_FILE", "r") as f:
         animals = f.read().strip().replace('|', ' #').lower()
         animal_hashtags = f"#{animals}" if animals else ""
 except:
@@ -293,7 +293,7 @@ if not creds.valid:
     creds.refresh(Request())
 
 yt = build('youtube', 'v3', credentials=creds)
-media = MediaFileUpload('$SHORT_FILE', chunksize=-1, resumable=True)
+media = MediaFileUpload("$SHORT_FILE", chunksize=-1, resumable=True)
 resp = yt.videos().insert(
     part='snippet,status',
     body={
@@ -309,7 +309,7 @@ resp = yt.videos().insert(
 ).execute()
 
 print(f"Uploaded: https://youtu.be/{resp['id']}")
-os.remove('$SHORT_FILE')
+os.remove("$SHORT_FILE")
 print("Deleted local short file")
 PYEOF
 
