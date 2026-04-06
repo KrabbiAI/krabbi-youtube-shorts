@@ -9,9 +9,9 @@
 
 BASE="/home/dobby/.openclaw/workspace/youtube-shorts"
 LOG="$BASE/upload_log.txt"
-PEXELS_API="YFU5OwjisNiAyjBj7GCJGM7WOzHSR1wLp2IVBwAddYkZWl463OexLXmV"
-TELEGRAM_BOT="8798400513:AAHVGh4T2dtsEXZML6zmtXLNLVPM4lpAcZE"
-CHAT_ID="631196199"
+PEXELS_API="${PEXELS_API_KEY:-}"
+TELEGRAM_BOT="${TELEGRAM_BOT_TOKEN:-}"
+CHAT_ID="${TELEGRAM_CHAT_ID:-}"
 FFMPEG="$BASE/ffmpeg-master-latest-linux64-gpl/bin/ffmpeg"
 FFPROBE="$BASE/ffmpeg-master-latest-linux64-gpl/bin/ffprobe"
 
