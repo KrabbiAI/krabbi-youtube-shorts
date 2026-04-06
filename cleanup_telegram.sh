@@ -1,7 +1,7 @@
 #!/bin/bash
 # Deletes Telegram messages older than 10 hours
-TELEGRAM_BOT="8798400513:AAHVGh4T2dtsEXZML6zmtXLNLVPM4lpAcZE"
-CHAT_ID="631196199"
+TELEGRAM_BOT="${TELEGRAM_BOT:-<your_bot_token>}"
+CHAT_ID="${TELEGRAM_CHAT_ID:-<your_chat_id>}"
 MSG_FILE="/home/dobby/.openclaw/workspace/youtube-shorts/telegram_messages.json"
 MAX_AGE_HOURS=10
 

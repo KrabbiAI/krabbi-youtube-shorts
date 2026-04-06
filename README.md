@@ -6,82 +6,145 @@
 
 ## What It Does
 
-Downloads Pexels videos → generates gTTS narration → cuts clips with FFmpeg → adds captions → uploads via YouTube OAuth API. Runs on cron at 07:30 and 17:30.
+Downloads Pexels videos → generates gTTS narration → cuts clips with FFmpeg → renders captions + thumbnails with Remotion → uploads via YouTube OAuth API. Runs on cron at 07:30 and 17:30.
 
 ## Restore from Scratch
 
+### 1. System Dependencies
+
 ```bash
-# Requires: Python 3.10+, Node.js 18+, FFmpeg
-python3 --version
-ffmpeg -version
+# Ubuntu/Debian
+sudo apt install python3-pip python3-venv curl wget git
 
+# FFmpeg (static build — no install needed)
 cd /home/dobby/.openclaw/workspace/youtube-shorts
-
-# Python dependencies
-pip install pexels-api requests gTTS
-
-# Node dependencies (for OAuth server)
-npm install
-
-# Set up credentials (see below)
-cp credentials.json my_credentials.json
-# Edit my_credentials.json with real tokens
+wget https://github.com/yt-dlp/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz
+tar xf ffmpeg-master-latest-linux64-gpl.tar.xz
+# Binary ends up at: ffmpeg-master-latest-linux64-gpl/bin/ffmpeg
 ```
 
-## Credentials Needed
+### 2. Python Dependencies
 
-### Pexels API
+```bash
+pip install pexels-api requests gTTS yt-dlp httplib2 google-auth google-auth-oauthlib google-auth-httplib2
+```
+
+### 3. Node Dependencies (for Remotion video rendering)
+
+```bash
+cd /home/dobby/.openclaw/workspace/youtube-shorts
+npm install
+```
+
+### 4. Credentials
+
+#### Pexels API
 1. Create account at https://www.pexels.com/api/
 2. Get API key
-3. Add to `credentials.json` or set env: `PEXELS_API_KEY=your_key`
+3. Create `credentials.json`:
+```json
+{
+  "pexels_api_key": "YOUR_PEXELS_KEY"
+}
+```
 
-### YouTube OAuth
-The `credentials.json` already contains OAuth tokens. To refresh:
+#### YouTube OAuth (Browser Required Once)
 ```bash
+# Run the OAuth flow — opens browser for Google sign-in
 python oauth_flow.py
-# Opens browser for OAuth consent
-# Saves tokens to credentials.json
+
+# This creates credentials.json with tokens
+# Tokens expire; refresh by running oauth_flow.py again
+```
+
+### 5. Directory Setup
+
+```bash
+mkdir -p stock output audio clips thumbnails uploaded
+```
+
+### 6. Verify Setup
+
+```bash
+# FFmpeg
+./ffmpeg-master-*/bin/ffmpeg -version
+
+# Python packages
+python -c "import pexels; import gtts; import yt_dlp; print('All OK')"
+
+# Remotion
+cd remotion && npx remotion preview Entry.tsx --port 3000
 ```
 
 ## Key Scripts
 
 | Script | Purpose |
 |--------|---------|
-| `create_short.py` | Main pipeline: video → TTS → cut → caption → output |
+| `create_short.py` | Download Pexels video → cut → add TTS → produce final MP4 |
+| `produce_short.sh` | Full pipeline with BGM + TTS + Remotion captions |
 | `upload.py` | YouTube OAuth upload |
-| `download_clips.py` | Pexels video downloader |
-| `oauth_flow.py` | Initial OAuth setup |
+| `download_clips.py` | Batch download from Pexels |
+| `oauth_flow.py` | Initial YouTube OAuth setup (opens browser) |
 
-## FFmpeg
+## Production Pipeline
 
-Static FFmpeg is included at `ffmpeg-master-latest-linux64-gpl/bin/ffmpeg`. If missing:
 ```bash
-cd /home/dobby/.openclaw/workspace/youtube-shorts
-wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
-tar -xf ffmpeg-release-amd64-static.tar.xz
-# Move ffmpeg to expected path
+# One-liner for a complete short:
+./produce_short.sh <num> "<narration>" "<animal_name>" <clips...>
+
+# Example:
+./produce_short.sh 1 "Look at these adorable puppies!" "Golden Retriever" clip1.mp4 clip2.mp4
 ```
 
-## Manual Usage
+## YouTube OAuth Refresh
 
+Access tokens expire after ~1 hour. To refresh:
 ```bash
-# Create a short
-python create_short.py --pexels-id 1234567 --query "cute puppy"
+python oauth_flow.py
+# Opens browser → sign in → tokens saved to credentials.json
+```
 
-# Upload
-python upload.py --file output/my_short.mp4 --title "Cute Puppy 🐕"
+For **headless servers**, set up a redirect tunnel:
+```bash
+# On server:
+python oauth_flow.py --port 8080
 
-# Download a Pexels video
-python download_clips.py --query "puppy playing" --count 3
+# Locally (with ngrok or similar):
+ngrok http 8080
+# Use the ngrok URL as redirect URI in Google Console
+```
+
+## Project Structure
+
+```
+youtube-shorts/
+├── create_short.py      # FFmpeg-based clip cutter + TTS
+├── produce_short.sh     # Full pipeline with BGM + Remotion
+├── upload.py           # YouTube OAuth upload
+├── download_clips.py   # Pexels batch downloader
+├── tts.py             # gTTS wrapper
+├── config.py          # Paths + constants
+├── oauth_flow.py      # YouTube OAuth setup (browser)
+├── credentials.json   # API tokens (gitignored)
+├── remotion/          # Video renderer (captions, thumbnails)
+│   ├── Entry.tsx
+│   ├── MyVideo.tsx
+│   └── ...
+├── ffmpeg-master-*/   # Static FFmpeg (gitignored)
+├── stock/             # Downloaded Pexels videos
+├── output/            # Rendered shorts
+├── audio/             # TTS + BGM files
+├── thumbnails/        # Generated thumbnails
+└── uploaded/          # Track uploaded videos
 ```
 
 ## Cron Schedule
 
 ```bash
-# Morning short
+# Morning short — 07:30
 30 7 * * * cd /home/dobby/.openclaw/workspace/youtube-shorts && bash cron_upload.sh >> upload_log.txt 2>&1
 
-# Evening short
+# Evening short — 17:30
 30 17 * * * cd /home/dobby/.openclaw/workspace/youtube-shorts && bash cron_upload.sh >> upload_log.txt 2>&1
 ```
 
@@ -89,44 +152,10 @@ python download_clips.py --query "puppy playing" --count 3
 
 | Tool | Purpose |
 |------|---------|
-| Python | Main pipeline |
-| FFmpeg (static) | Video cutting, re-encoding |
+| Python | Main pipeline + OAuth |
+| FFmpeg (static) | Video cutting, audio mixing, re-encoding |
 | gTTS | Text-to-speech narration |
-| Pexels API | Stock video source |
+| yt-dlp | Video downloading |
+| Pexels API | Stock video library |
+| Remotion | Video composition (captions, effects) |
 | YouTube Data API v3 | OAuth upload |
-
-## Project Structure
-
-```
-youtube-shorts/
-├── create_short.py      # Main short creation
-├── upload.py           # YouTube upload
-├── download_clips.py   # Pexels downloader
-├── tts.py             # gTTS wrapper
-├── config.py          # Paths + settings
-├── oauth_flow.py      # YouTube OAuth setup
-├── credentials.json   # API tokens (gitignored)
-├── ffmpeg-master-*/   # Static FFmpeg binary
-├── stock/             # Downloaded Pexels videos
-├── output/            # Generated shorts (pre-upload)
-├── uploaded/          # Track uploaded videos
-├── audio/             # TTS audio files
-├── thumbnails/        # Generated thumbnails
-└── cron_upload.sh     # Cron entry point
-```
-
-## Verify Setup
-
-```bash
-# FFmpeg
-./ffmpeg-master-latest-linux64-gpl/bin/ffmpeg -version
-
-# Pexels API
-curl -H "Authorization: YOUR_API_KEY" https://api.pexels.com/videos/search?query=puppy
-
-# gTTS
-python -c "from gtts import gTTS; tts = gTTS('hello'); tts.save('/tmp/test.mp3')"
-
-# YouTube OAuth
-python -c "import httplib2; print('httplib2 OK')"
-```
