@@ -146,30 +146,51 @@ def generate_tts(narration, output_file):
         raise Exception(f"ElevenLabs API error: {response.status_code} - {response.text}")
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: facts_search.py <output.mp3> [count]")
-        sys.exit(1)
-    
-    output_file = sys.argv[1]
-    count = int(sys.argv[2]) if len(sys.argv) > 2 else 1
-    
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate TTS narration for animal facts")
+    parser.add_argument('output', help='Output MP3 file path')
+    parser.add_argument('count', nargs='?', type=int, default=1, help='Number of facts')
+    parser.add_argument('--animals', '-a', help='Comma-separated specific animals to use (e.g. "Dolphins,Bees")')
+    args = parser.parse_args()
+    output_file = args.output
+    count = args.count
+
     # Check if we're running low on facts
     unused_count = len(get_random_unused_facts(0)[1])
     print(f"Available unused facts: {unused_count}")
-    
+
     if unused_count < 10:
         print("Running low on facts! Researching new ones...")
         research_new_facts()
-    
-    result, all_unused = get_random_unused_facts(count)
-    
-    if len(result) < count:
-        print(f"Only {len(result)} unused facts available!")
-        count = len(result)
-        if count == 0:
-            print("ERROR: No facts left!")
-            sys.exit(1)
-    
+
+    if args.animals:
+        # Use specific animals — pick one unused fact per specified animal
+        requested_animals = [a.strip() for a in args.animals.split(',')]
+        result = []
+        with open(FACTS_FILE, 'r') as f:
+            data = json.load(f)
+        used = load_used_ids()
+        for animal_name in requested_animals:
+            for animal in data['animals']:
+                if animal['name'].lower() == animal_name.lower():
+                    for fact in animal['facts']:
+                        if fact['id'] not in used:
+                            result.append((fact['id'], fact['text'], animal['name']))
+                            used.add(fact['id'])  # prevent reuse in same batch
+                            break
+                    break
+        print(f"Using specific animals: {args.animals}")
+        if len(result) < len(requested_animals):
+            print(f"WARNING: Only {len(result)} unused facts found for requested animals")
+    else:
+        result, all_unused = get_random_unused_facts(count)
+
+    if len(result) < 1:
+        print("ERROR: No unused facts available!")
+        sys.exit(1)
+
+    count = len(result)
+
     # Extract fact texts and animal names
     facts = [f[1] for f in result]
     fact_ids = [f[0] for f in result]
@@ -180,12 +201,17 @@ if __name__ == "__main__":
     print(f"Animals: {', '.join(animal_names)}")
     
     # Build narration with engaging hook
+    # Handle pluralization: don't add 's' if already ends in 's'
+    def pluralize(name):
+        name = name.lower()
+        return name + ("s" if not name.endswith("s") else "")
+    
     if len(facts) == 1:
         # Single fact: hook first, then the detail
-        narration = f"Here's something incredible about {animal_names[0].lower()}s. {facts[0]} Subscribe for more amazing animal facts!"
+        narration = f"Here's something incredible about {pluralize(animal_names[0])}. {facts[0]} Subscribe for more amazing animal facts!"
     else:
         # Multiple facts: hook for first, detail for rest
-        hook = f"Wait until you hear this about {animal_names[0].lower()}s."
+        hook = f"Wait until you hear this about {pluralize(animal_names[0])}."
         rest = " And here's another amazing fact. ".join(facts)
         narration = f"{hook} {rest} Subscribe for more incredible animal facts!"
     
