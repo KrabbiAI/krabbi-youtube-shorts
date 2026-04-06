@@ -1,758 +1,44 @@
 {
   "animals": [
     {
-      "name": "Dolphins",
+      "name": "Arctic Foxes",
       "facts": [
         {
-          "id": "95324ba647c9",
-          "text": "Dolphins have two stomachs \u2014 one for food and one for digestion! They also use tools like sponges to protect their snouts!"
+          "id": "arc1",
+          "text": "Arctic foxes can survive temperatures as low as minus 58 degrees Fahrenheit!"
         },
         {
-          "id": "fccbf43caded",
-          "text": "Dolphins can recognize themselves in mirrors, which shows they have self-awareness similar to humans and great apes!"
+          "id": "arc2",
+          "text": "Their fur changes color with the seasons \u2014 white in winter, brown in summer!"
         },
         {
-          "id": "74d442dd2dd5",
-          "text": "A dolphin can hold its breath for up to 10 minutes! They breathe through a blowhole on top of their head!"
+          "id": "arc3",
+          "text": "They use their bushy tail as a blanket to cover their face while sleeping!"
         },
         {
-          "id": "5190060aa755",
-          "text": "Dolphins sleep with one eye open! Half of their brain stays awake to watch for predators and keep breathing!"
+          "id": "arc4",
+          "text": "Arctic foxes can hear prey moving under two feet of compacted snow!"
         }
       ]
     },
     {
-      "name": "Dogs",
+      "name": "Axolotls",
       "facts": [
         {
-          "id": "d038eabcdb40",
-          "text": "Dogs have 10,000 times better sense of smell than humans! Some dogs can detect diseases like cancer!"
+          "id": "axol1",
+          "text": "Axolotls can regenerate their limbs, heart, and even parts of their brain!"
         },
         {
-          "id": "345c959dfdcb",
-          "text": "A dog's nose print is as unique as a human fingerprint! No two dogs have the same nose pattern!"
+          "id": "axol2",
+          "text": "They never grow out of their larval stage \u2014 this is called neoteny!"
         },
         {
-          "id": "a5fc2f5fb2e0",
-          "text": "Dogs can understand up to 250 words and gestures! The average dog is as smart as a two-year-old child!"
+          "id": "axol3",
+          "text": "Axolotls are native only to Lake Xochimilco in Mexico!"
         },
         {
-          "id": "ee81815f8a59",
-          "text": "When dogs wag their tail to the right, it usually means they're happy! To the left can indicate fear!"
-        }
-      ]
-    },
-    {
-      "name": "Cats",
-      "facts": [
-        {
-          "id": "58dc808efbf2",
-          "text": "Cats spend 70% of their lives sleeping! That's about 13 to 16 hours a day!"
-        },
-        {
-          "id": "62c86c777987",
-          "text": "A cat's purr vibrates at a frequency that helps heal bones and reduce pain!"
-        },
-        {
-          "id": "4eba17c2d906",
-          "text": "Cats have over 20 different vocalizations! They can make over 100 different sounds!"
-        },
-        {
-          "id": "b87e9b08bbed",
-          "text": "A cat can jump up to six times its body length in a single leap! That's like a human jumping 30 feet!"
-        }
-      ]
-    },
-    {
-      "name": "Elephants",
-      "facts": [
-        {
-          "id": "66c4038b31d8",
-          "text": "Elephants are the only animals that can't jump! But they're excellent swimmers despite their massive size!"
-        },
-        {
-          "id": "3de823ec6c92",
-          "text": "An elephant's trunk has over 40,000 muscles! It's more dexterous than human fingers!"
-        },
-        {
-          "id": "9fdcee7dce2e",
-          "text": "Elephants can recognize themselves in mirrors, showing high intelligence and self-awareness!"
-        },
-        {
-          "id": "9900164a8174",
-          "text": "Baby elephants suck their trunks for comfort, similar to how human babies suck their thumbs!"
-        }
-      ]
-    },
-    {
-      "name": "Octopuses",
-      "facts": [
-        {
-          "id": "3198e4b22c2d",
-          "text": "Octopuses have three hearts and blue blood! Two hearts pump blood to the gills, one to the body!"
-        },
-        {
-          "id": "9e7a8ae5d44e",
-          "text": "An octopus can change its color and texture in less than a second to blend with its surroundings!"
-        },
-        {
-          "id": "72b38db95b30",
-          "text": "Octopuses have nine brains! One central brain and a mini brain in each of their eight arms!"
-        },
-        {
-          "id": "fb662f1be90e",
-          "text": "They can squeeze through any gap larger than their beak, which is the only hard part of their body!"
-        }
-      ]
-    },
-    {
-      "name": "Sloths",
-      "facts": [
-        {
-          "id": "09362e28d4ca",
-          "text": "Sloths can hold their breath for up to 40 minutes! They slow their heart rate to survive underwater!"
-        },
-        {
-          "id": "ffe1056c0f36",
-          "text": "A sloth's stomach takes up a third of its body weight and can take 30 days to digest a single leaf!"
-        },
-        {
-          "id": "d40dd9a9b5c6",
-          "text": "Sloths descend from their trees only once a week to poop! They lose a third of their body weight in one trip!"
-        },
-        {
-          "id": "b6c5815fb506",
-          "text": "Despite being slow on land, sloths are surprisingly strong swimmers! They can hold their breath for 40 minutes!"
-        }
-      ]
-    },
-    {
-      "name": "Owls",
-      "facts": [
-        {
-          "id": "64041bbab158",
-          "text": "Owls can rotate their heads 270 degrees! They can't move their eyes because they're shaped like tubes!"
-        },
-        {
-          "id": "299498a42692",
-          "text": "A owl's eyes are fixed in place, so they have to turn their entire head to look around!"
-        },
-        {
-          "id": "b0c972b8dd66",
-          "text": "Some owl species can fly in complete silence! Their wing feathers have special edges that muffle sound!"
-        },
-        {
-          "id": "bb9e5a09e423",
-          "text": "Owls swallow their prey whole and later cough up pellets containing the bones and fur they couldn't digest!"
-        }
-      ]
-    },
-    {
-      "name": "Crows",
-      "facts": [
-        {
-          "id": "0077fb44aeab",
-          "text": "Crows can recognize and remember human faces for years! They can tell if someone is a friend or foe!"
-        },
-        {
-          "id": "6f60fb71fddd",
-          "text": "A crow's brain is relatively the same size as a chimpanzee brain! They're among the smartest birds!"
-        },
-        {
-          "id": "946266bf2813",
-          "text": "Crows use tools to get food! They can bend wire into hooks and drop pebbles to raise water levels!"
-        },
-        {
-          "id": "290847083ed4",
-          "text": "Some crows hold funerals! They gather around dead crows to learn about dangers in their area!"
-        }
-      ]
-    },
-    {
-      "name": "Kangaroos",
-      "facts": [
-        {
-          "id": "fd2626c6ed50",
-          "text": "A baby kangaroo is called a joey and it's only the size of a jellybean when born!"
-        },
-        {
-          "id": "6d78883e1391",
-          "text": "Kangaroos can't walk backwards! They only move forward, which is why they're on Australia's coat of arms!"
-        },
-        {
-          "id": "36794a67c4fa",
-          "text": "When kangaroos hop, they use less energy than a cat or dog running at the same speed!"
-        },
-        {
-          "id": "ec8d2e2a5865",
-          "text": "A group of kangaroos is called a mob! The mob is led by the largest male, called a boomer!"
-        }
-      ]
-    },
-    {
-      "name": "Butterflies",
-      "facts": [
-        {
-          "id": "29bb00624216",
-          "text": "Some butterflies can travel 3,000 miles during migration, crossing the entire Atlantic Ocean!"
-        },
-        {
-          "id": "a8499eecba1e",
-          "text": "Butterflies taste with their feet! Their taste sensors are located on their leg cells!"
-        },
-        {
-          "id": "1a2a73240eab",
-          "text": "A butterfly's lifecycle is called metamorphosis! It has four stages: egg, caterpillar, chrysalis, adult!"
-        },
-        {
-          "id": "3e1bb2743ab1",
-          "text": "Butterflies have been on Earth for over 50 million years, since the time of the dinosaurs!"
-        }
-      ]
-    },
-    {
-      "name": "Flamingos",
-      "facts": [
-        {
-          "id": "2b2d9e14359e",
-          "text": "Flamingos can run up to 35 miles per hour on the ground and prefer living in large groups of thousands!"
-        },
-        {
-          "id": "df5cb2370ac0",
-          "text": "Flamingos are pink because of the beta-carotene in the shrimp and algae they eat!"
-        },
-        {
-          "id": "1dfdeed0d01c",
-          "text": "A flamingo can only eat with its head upside down! Their special beaks are designed for this!"
-        },
-        {
-          "id": "c772fa5ebcbf",
-          "text": "Flamingos are one of the few birds that can actually swim! Many other birds avoid deep water!"
-        }
-      ]
-    },
-    {
-      "name": "Koalas",
-      "facts": [
-        {
-          "id": "9988aef490a0",
-          "text": "Koalas have fingerprints almost identical to human fingerprints! Even experts can mistake them!"
-        },
-        {
-          "id": "d55026eec6d2",
-          "text": "Koalas sleep up to 22 hours a day! Their diet of eucalyptus leaves gives them very little energy!"
-        },
-        {
-          "id": "de7f6b32683e",
-          "text": "Baby koalas eat their mother's poop! This helps them develop the bacteria needed to digest eucalyptus!"
-        },
-        {
-          "id": "3b0e9cc5fd15",
-          "text": "Koalas are marsupials, meaning they carry their babies in pouches! The pouch opens toward the mother's back!"
-        }
-      ]
-    },
-    {
-      "name": "Ants",
-      "facts": [
-        {
-          "id": "ce4e54bd715a",
-          "text": "Ants can carry objects 50 times their own body weight! They're one of the strongest creatures on Earth!"
-        },
-        {
-          "id": "f8c00edf1e1b",
-          "text": "Ants don't have lungs! They breathe through tiny holes all over their bodies called spiracles!"
-        },
-        {
-          "id": "fdd6fe154b7b",
-          "text": "Ants can survive underwater! They can close their spiracles and hold their breath for a long time!"
-        },
-        {
-          "id": "2f9bf72d1b05",
-          "text": "There are over 12,000 known species of ants, and they make up about 15% of all animal biomass on land!"
-        }
-      ]
-    },
-    {
-      "name": "Hummingbirds",
-      "facts": [
-        {
-          "id": "1b6d26c1fddf",
-          "text": "Hummingbirds are the only birds that can fly backwards! Their unique ball-and-socket shoulder joints allow this!"
-        },
-        {
-          "id": "ac4497f6d4b8",
-          "text": "A hummingbird's heart beats over 1,200 times per minute during flight! At rest it's still 250 beats per minute!"
-        },
-        {
-          "id": "54d8984ec947",
-          "text": "Hummingbirds eat twice their body weight in nectar every day! They visit hundreds of flowers daily!"
-        },
-        {
-          "id": "007b527c051c",
-          "text": "A hummingbird's brain is 4.2% of its body weight, the largest proportion of any bird! They can remember every flower they've visited!"
-        }
-      ]
-    },
-    {
-      "name": "Starfish",
-      "facts": [
-        {
-          "id": "859c129fdd8d",
-          "text": "Starfish don't have a brain! They process everything through their nervous system spread across their arms!"
-        },
-        {
-          "id": "c1fd96769b4f",
-          "text": "If a starfish loses an arm, it can grow it back! Sometimes the arm grows into a whole new starfish!"
-        },
-        {
-          "id": "73884673f00c",
-          "text": "Starfish don't have blood! They use filtered sea water to pump nutrients through their bodies!"
-        },
-        {
-          "id": "f02607a41e25",
-          "text": "Starfish have eyes at the end of each arm! They can't see details but they can sense light and dark!"
-        }
-      ]
-    },
-    {
-      "name": "Penguins",
-      "facts": [
-        {
-          "id": "f00c3024a9bc",
-          "text": "Emperor penguins can dive deeper than any other bird, reaching depths of over 1,800 feet!"
-        },
-        {
-          "id": "9f8570b287ee",
-          "text": "A emperor penguin egg sits on the father's feet for two months! He doesn't eat and endures temperatures of -50\u00b0C!"
-        },
-        {
-          "id": "874e0eb755b7",
-          "text": "Penguins can drink salt water because they have a special gland that filters salt from their blood!"
-        },
-        {
-          "id": "19e9a8dbb079",
-          "text": "The Galapagos penguin is the only penguin species found north of the equator! They live in tropical waters!"
-        }
-      ]
-    },
-    {
-      "name": "Tigers",
-      "facts": [
-        {
-          "id": "c662f32c2689",
-          "text": "A tiger's night vision is 6 times better than a human's! They hunt mostly during dawn and dusk!"
-        },
-        {
-          "id": "847dcb6164b5",
-          "text": "No two tigers have the same stripe pattern! Like human fingerprints, each tiger is completely unique!"
-        },
-        {
-          "id": "fc2488f8ccfe",
-          "text": "A tiger's roar can be heard from 2 miles away! It communicates territorial boundaries to other tigers!"
-        },
-        {
-          "id": "fca68c43928a",
-          "text": "Tigers are excellent swimmers! Unlike most cats, they love the water and can swim for miles!"
-        }
-      ]
-    },
-    {
-      "name": "Otters",
-      "facts": [
-        {
-          "id": "7008fa4b205c",
-          "text": "Sea otters hold hands while sleeping so they don't drift apart! They're incredibly social creatures!"
-        },
-        {
-          "id": "5d9c27d77065",
-          "text": "Otters have the densest fur of any mammal, with up to a million hairs per square inch!"
-        },
-        {
-          "id": "b0bdb7807ae5",
-          "text": "A group of otters in water is called a raft! The largest raft can have over 1,000 otters!"
-        },
-        {
-          "id": "9bef359f988d",
-          "text": "Otters can close their ears and nose underwater! They can stay submerged for nearly 5 minutes!"
-        }
-      ]
-    },
-    {
-      "name": "Foxes",
-      "facts": [
-        {
-          "id": "d983d8ff0980",
-          "text": "A fox's pupils are vertical, similar to cats! This helps them hunt small prey more effectively!"
-        },
-        {
-          "id": "c99e877bd32c",
-          "text": "Foxes can hear a mouse moving under 3 feet of snow! They use a special pouncing technique to catch it!"
-        },
-        {
-          "id": "faa2abe05b65",
-          "text": "Red foxes can adapt to almost any habitat! They live on every continent except Antarctica!"
-        },
-        {
-          "id": "87bab2b732dc",
-          "text": "A fox's tail is called a brush! It helps them balance and also keeps them warm during cold nights!"
-        }
-      ]
-    },
-    {
-      "name": "Seals",
-      "facts": [
-        {
-          "id": "c4c78484fb72",
-          "text": "Elephant seals can hold their breath for 2 hours! They dive deeper than almost any other marine mammal!"
-        },
-        {
-          "id": "cb4ddf532558",
-          "text": "Seals have a layer of blubber under their skin that can be up to 6 inches thick!"
-        },
-        {
-          "id": "b0bb5c801279",
-          "text": "A seal's whiskers are incredibly sensitive! They can detect vibrations in the water from fish swimming nearby!"
-        },
-        {
-          "id": "b2aa2c983418",
-          "text": "Leopard seals can reach speeds of 25 mph underwater! They're one of the fastest seals in the ocean!"
-        }
-      ]
-    },
-    {
-      "name": "Llamas",
-      "facts": [
-        {
-          "id": "0a7d757576de",
-          "text": "Llamas are very clean animals! They tend to use the same spot as a toilet, away from where they eat!"
-        },
-        {
-          "id": "036742ba9eb3",
-          "text": "A llama can carry up to 30% of its body weight for up to 15 miles! They're perfect pack animals!"
-        },
-        {
-          "id": "2ab61e087317",
-          "text": "Llamas are social and get lonely if kept alone! They often bond closely with other llamas!"
-        },
-        {
-          "id": "893cc6c959b3",
-          "text": "Llamas communicate by humming! Each hum can mean something different, from hunger to contentment!"
-        }
-      ]
-    },
-    {
-      "name": "Frogs",
-      "facts": [
-        {
-          "id": "06a51ec3e8c9",
-          "text": "Frogs don't drink water! They absorb it through their skin! Their belly is specially designed to soak up moisture!"
-        },
-        {
-          "id": "a50b52ca5121",
-          "text": "Some frogs can freeze completely solid during winter and thaw out alive in spring! Their blood has special antifreeze proteins!"
-        },
-        {
-          "id": "d42c00dee29a",
-          "text": "The glass frog has transparent skin on its belly, so you can see its heart, liver, and intestines!"
-        },
-        {
-          "id": "272fc6c3d258",
-          "text": "Frogs shed their skin regularly and often eat the shed skin! Nothing goes to waste!"
-        }
-      ]
-    },
-    {
-      "name": "Bunnies",
-      "facts": [
-        {
-          "id": "45abc43d5e00",
-          "text": "When rabbits are really happy, they do a twist in the air called a binky! It's an expression of pure joy!"
-        },
-        {
-          "id": "ee4f537b77ac",
-          "text": "A rabbit's teeth never stop growing! They need to chew on hay and vegetables to keep them worn down!"
-        },
-        {
-          "id": "e47cb1a8c4ef",
-          "text": "Rabbits can see nearly 360 degrees! Their only blind spot is directly in front of their nose!"
-        },
-        {
-          "id": "3e564a753a1b",
-          "text": "Baby rabbits are called kits! A mother rabbit can have up to 12 babies in one litter!"
-        }
-      ]
-    },
-    {
-      "name": "Parrots",
-      "facts": [
-        {
-          "id": "ec7710e0d21c",
-          "text": "Parrots have curved beaks specially adapted for cracking nuts and seeds! They can exert incredible force!"
-        },
-        {
-          "id": "804ec679e477",
-          "text": "Some parrots can live over 80 years! The oldest known parrot was a macaw named Cookie, who lived to 82!"
-        },
-        {
-          "id": "f2e665c8b904",
-          "text": "Parrots are one of the few animals that can dance to music! They sync their movements to rhythm naturally!"
-        },
-        {
-          "id": "b64ef839798f",
-          "text": "A parrot's tongue is thick and fleshy! It helps them mimic human speech by shaping sound in their throat!"
-        }
-      ]
-    },
-    {
-      "name": "Giraffes",
-      "facts": [
-        {
-          "id": "844a7fa3de8d",
-          "text": "A giraffe's tongue is 20 inches long and completely black! This protects it from sunburn while eating!"
-        },
-        {
-          "id": "4662327afeae",
-          "text": "Giraffes only need 30 minutes of sleep per day! They often sleep standing up in short bursts!"
-        },
-        {
-          "id": "02f7f50f8c57",
-          "text": "Each giraffe has a unique pattern of spots, just like human fingerprints! No two giraffes are alike!"
-        },
-        {
-          "id": "f99658494ce9",
-          "text": "A giraffe's kick is so powerful it can kill a lion! They use their long necks as weapons too!"
-        }
-      ]
-    },
-    {
-      "name": "Sharks",
-      "facts": [
-        {
-          "id": "15b18058880b",
-          "text": "Sharks have been on Earth for over 400 million years! They existed before trees and dinosaurs!"
-        },
-        {
-          "id": "4c0d13359432",
-          "text": "Great white sharks can detect a single drop of blood in 25 gallons of water! That's incredible sensitivity!"
-        },
-        {
-          "id": "e66024936ef5",
-          "text": "Most sharks never stop swimming! If they stop, they sink because they don't have swim bladders!"
-        },
-        {
-          "id": "8b3eedec8a5d",
-          "text": "Sharks can go through up to 30,000 teeth in their lifetime! They replace teeth every few weeks!"
-        }
-      ]
-    },
-    {
-      "name": "Horses",
-      "facts": [
-        {
-          "id": "d649c0c28bf0",
-          "text": "Horses can sleep both lying down and standing up! They have a locking system in their legs!"
-        },
-        {
-          "id": "4a93e110d3c4",
-          "text": "A horse's memory is extremely long! They can remember places and other horses for many years!"
-        },
-        {
-          "id": "a6171f617419",
-          "text": "Horses have 10 different muscles in their ears! They can rotate their ears 180 degrees independently!"
-        },
-        {
-          "id": "3cd42c44e686",
-          "text": "Newborn foals can run within a few hours of being born! This is essential for escaping predators!"
-        }
-      ]
-    },
-    {
-      "name": "Pandas",
-      "facts": [
-        {
-          "id": "ed44d5ac88ee",
-          "text": "Despite being called carnivores, 99% of a panda's diet is bamboo! They can't properly digest meat!"
-        },
-        {
-          "id": "14b7ef608130",
-          "text": "Giant pandas spend 12 hours every day eating bamboo! They consume up to 38 kg daily!"
-        },
-        {
-          "id": "e466879a9ba6",
-          "text": "A newborn panda is about the size of a stick of butter! Adults weigh up to 250 pounds!"
-        },
-        {
-          "id": "4274185b710e",
-          "text": "Pandas have a special wrist bone that acts like a thumb! It helps them grip bamboo stalks!"
-        }
-      ]
-    },
-    {
-      "name": "Chickens",
-      "facts": [
-        {
-          "id": "7f0079052661",
-          "text": "Chickens dream when they sleep! They experience REM sleep just like humans and other mammals!"
-        },
-        {
-          "id": "0eb6b8218373",
-          "text": "A henmother calls to her chicks while they're still inside the egg! The chicks chirp back!"
-        },
-        {
-          "id": "d1040de0da73",
-          "text": "Chickens have over 30 distinct vocalizations! They have unique alarm calls for different predators!"
-        },
-        {
-          "id": "2076af6d6967",
-          "text": "A chicken can recognize over 100 different faces! They remember people and other animals for years!"
-        }
-      ]
-    },
-    {
-      "name": "Pigs",
-      "facts": [
-        {
-          "id": "f669414a74e3",
-          "text": "Pigs are among the smartest animals on Earth! They can learn tricks as quickly as dogs!"
-        },
-        {
-          "id": "d0b25d65b39f",
-          "text": "A pig's snout never stops working! It's their primary tool for exploring and understanding the world!"
-        },
-        {
-          "id": "c1114a6d6655",
-          "text": "Pigs can run 11 miles per hour! They can also swim surprisingly well despite their bulk!"
-        },
-        {
-          "id": "8b67f8dc2a9e",
-          "text": "Pigs don't sweat! They roll in mud to cool down because they can't perspire through their skin!"
-        }
-      ]
-    },
-    {
-      "name": "Ducks",
-      "facts": [
-        {
-          "id": "54cccf23dcc1",
-          "text": "Ducklings can swim just 2 hours after hatching! They're born with a water-repellent coating on their feathers!"
-        },
-        {
-          "id": "609844489e78",
-          "text": "A duck's quack doesn't echo! This is a scientific fact that's still not fully understood!"
-        },
-        {
-          "id": "e675a88be08f",
-          "text": "Ducks can sleep with one eye open! Half their brain stays alert while the other half rests!"
-        },
-        {
-          "id": "e017d00dcaea",
-          "text": "Some ducks can fly at speeds over 60 miles per hour! They migrate thousands of miles each year!"
-        }
-      ]
-    },
-    {
-      "name": "Turtles",
-      "facts": [
-        {
-          "id": "b0d0cf7036f6",
-          "text": "A turtle's shell is part of its skeleton! It's made of over 50 bones including ribs and spine!"
-        },
-        {
-          "id": "4c8400d13dba",
-          "text": "Some sea turtles can hold their breath for up to 7 hours while sleeping underwater!"
-        },
-        {
-          "id": "64072bdc8c4d",
-          "text": "The sex of some turtle babies is determined by temperature! Cooler nests produce more males!"
-        },
-        {
-          "id": "17f8fc0dff02",
-          "text": "Turtles have existed for over 200 million years! They outlived dinosaurs and many other ancient creatures!"
-        }
-      ]
-    },
-    {
-      "name": "Polar Bears",
-      "facts": [
-        {
-          "id": "87ec66a01bc6",
-          "text": "Polar bear fur isn't actually white! Each hair shaft is transparent and reflects light to appear white!"
-        },
-        {
-          "id": "e8f70f562412",
-          "text": "A polar bear's skin is black! This helps them absorb and retain heat from the sun!"
-        },
-        {
-          "id": "a092c75bf008",
-          "text": "Polar bears can swim for days without stopping! They've been known to swim over 200 miles!"
-        },
-        {
-          "id": "6146b69a5ea9",
-          "text": "Their fur is so insulated that polar bears can overheat in summer! They often rest in shade or snow!"
-        }
-      ]
-    },
-    {
-      "name": "Lobsters",
-      "facts": [
-        {
-          "id": "7a59b11a1720",
-          "text": "Lobsters have blue blood! Their blood contains copper-based hemocyanin instead of iron-based hemoglobin!"
-        },
-        {
-          "id": "f67c67884728",
-          "text": "A lobster's teeth are in its stomach! Three teeth-like structures grind food before it reaches the intestines!"
-        },
-        {
-          "id": "e31bd16cc441",
-          "text": "Lobsters can live for over 100 years! They only become weaker when they molt their shells!"
-        },
-        {
-          "id": "97047676bb3b",
-          "text": "Lobsters can regenerate lost limbs! They can regrow legs, claws, and even eyes over time!"
-        }
-      ]
-    },
-    {
-      "name": "Peacocks",
-      "facts": [
-        {
-          "id": "1c06e5e9eaa8",
-          "text": "Only male peacocks display their colorful feathers! Females choose mates based on feather quality and size!"
-        },
-        {
-          "id": "cb9f6c385993",
-          "text": "A peacock's train feathers can be 6 feet long! They shed these feathers every year after mating season!"
-        },
-        {
-          "id": "5dbce03c433f",
-          "text": "Peacocks can fly, but only for short distances! They usually fly to escape predators or roost in trees!"
-        },
-        {
-          "id": "aae0cab47af2",
-          "text": "A peacock's call is surprisingly harsh! It sounds more like a scream than a beautiful song!"
-        }
-      ]
-    },
-    {
-      "name": "Squirrels",
-      "facts": [
-        {
-          "id": "8338308fac5e",
-          "text": "Squirrels plant thousands of trees every year! They forget where they buried about 30% of their acorns!"
-        },
-        {
-          "id": "4fbd8595f75f",
-          "text": "A squirrel's front teeth never stop growing! They must chew constantly to keep them worn down!"
-        },
-        {
-          "id": "549677c0e7bb",
-          "text": "Squirrels can rotate their ankles 180 degrees! This helps them climb down trees headfirst!"
-        },
-        {
-          "id": "a8baf1175098",
-          "text": "Baby squirrels are called kittens! A mother squirrel can have up to 8 babies in one litter!"
+          "id": "axol4",
+          "text": "Despite their alien appearance, they're actually quite gentle!"
         }
       ]
     },
@@ -778,233 +64,191 @@
       ]
     },
     {
-      "name": "Goldfish",
+      "name": "Beluga Whales",
       "facts": [
         {
-          "id": "b0a6fe5637b6",
-          "text": "Goldfish can remember things for at least 3 months! Their bad memory reputation is completely unfair!"
+          "id": "bel1",
+          "text": "Beluga whales are called the canaries of the sea because of their wide range of sounds!"
         },
         {
-          "id": "397ef2171d12",
-          "text": "A goldfish's attention span is about 9 seconds! But scientists say they can be trained to tell time!"
+          "id": "bel2",
+          "text": "They can change the shape of their forehead to show different facial expressions!"
         },
         {
-          "id": "ae52f9ae9041",
-          "text": "Goldfish can see more colors than humans! They have four types of cone cells in their eyes!"
+          "id": "bel3",
+          "text": "Belugas are completely white as adults \u2014 their calves are born gray!"
         },
         {
-          "id": "351644049a7f",
-          "text": "A goldfish can live over 40 years! The oldest known goldfish lived to 43 years old!"
+          "id": "bel4",
+          "text": "They can swim backwards and even upside down with incredible flexibility!"
         }
       ]
     },
     {
-      "name": "Camels",
+      "name": "Blobfish",
       "facts": [
         {
-          "id": "e4d3b5486b29",
-          "text": "A camel can drink up to 40 gallons of water at once! Their bodies are perfectly designed for desert life!"
+          "id": "blo1",
+          "text": "Blobfish look normal underwater but become a gooey mess when pulled to the surface!"
         },
         {
-          "id": "9385bc54f3b8",
-          "text": "Camels have three eyelids and two rows of eyelashes! This protects their eyes from sand and sun!"
+          "id": "blo2",
+          "text": "Their gelatinous body is perfectly adapted to deep ocean pressure!"
         },
         {
-          "id": "8b0c5e500c02",
-          "text": "A camel's hump stores fat, not water! They can survive for weeks without food using this reserve!"
+          "id": "blo3",
+          "text": "Blobfish have no muscles \u2014 they just float and wait for food to come to them!"
         },
         {
-          "id": "d751cff357ef",
-          "text": "Camels can close their nostrils completely! This prevents sand from entering their nose during sandstorms!"
+          "id": "blo4",
+          "text": "They're considered one of the ugliest animals but that's just our perspective!"
         }
       ]
     },
     {
-      "name": "Chameleons",
+      "name": "Bunnies",
       "facts": [
         {
-          "id": "23f2f5f73020",
-          "text": "Chameleons can move their eyes independently! Each eye can rotate 180 degrees separately!"
+          "id": "45abc43d5e00",
+          "text": "When rabbits are really happy, they do a twist in the air called a binky! It's an expression of pure joy!"
         },
         {
-          "id": "9738a0b40c7e",
-          "text": "A chameleon changes color using special cells called chromatophores! They change color to communicate and regulate temperature!"
+          "id": "ee4f537b77ac",
+          "text": "A rabbit's teeth never stop growing! They need to chew on hay and vegetables to keep them worn down!"
         },
         {
-          "id": "ec636fcfe4f4",
-          "text": "Chameleons have tongues that can be twice the length of their body! They can catch insects in 1/16th of a second!"
+          "id": "e47cb1a8c4ef",
+          "text": "Rabbits can see nearly 360 degrees! Their only blind spot is directly in front of their nose!"
         },
         {
-          "id": "20fb19d49ed7",
-          "text": "Chameleons don't have ears, but they're not deaf! They can detect vibrations through their jawbone!"
+          "id": "3e564a753a1b",
+          "text": "Baby rabbits are called kits! A mother rabbit can have up to 12 babies in one litter!"
         }
       ]
     },
     {
-      "name": "Narwhals",
+      "name": "Butterflies",
       "facts": [
         {
-          "id": "d66889051dde",
-          "text": "The narwhal's spiral tusk is actually a tooth! It can grow up to 10 feet long!"
+          "id": "29bb00624216",
+          "text": "Some butterflies can travel 3,000 miles during migration, crossing the entire Atlantic Ocean!"
         },
         {
-          "id": "b26f20adaf70",
-          "text": "Narwhals can dive over a mile deep! They hold their breath for up to 25 minutes!"
+          "id": "a8499eecba1e",
+          "text": "Butterflies taste with their feet! Their taste sensors are located on their leg cells!"
         },
         {
-          "id": "0645e03322ba",
-          "text": "Narwhals can make over 30 different sounds! They use clicks, whistles, and knocks to communicate!"
+          "id": "1a2a73240eab",
+          "text": "A butterfly's lifecycle is called metamorphosis! It has four stages: egg, caterpillar, chrysalis, adult!"
         },
         {
-          "id": "8d6ddf3e9c7c",
-          "text": "The Inuit people call narwhals the unicorns of the sea! Their tusk was once sold as unicorn horns!"
+          "id": "3e1bb2743ab1",
+          "text": "Butterflies have been on Earth for over 50 million years, since the time of the dinosaurs!"
         }
       ]
     },
     {
-      "name": "Platypus",
+      "name": "Capybaras",
       "facts": [
         {
-          "id": "e4d1d155ad2c",
-          "text": "The platypus is one of the few mammals that lay eggs instead of giving birth to live young!"
+          "id": "cap1",
+          "text": "Capybaras are the largest rodents in the world, weighing up to 150 pounds!"
         },
         {
-          "id": "1abd94ad0c5e",
-          "text": "Platypus males have venomous spurs on their hind legs! The venom can cause severe pain in humans!"
+          "id": "cap2",
+          "text": "They're incredibly social and often adopt other animals as their friends!"
         },
         {
-          "id": "dab448841cde",
-          "text": "A platypus hunts by sensing electric fields! It can detect the muscle contractions of hidden prey!"
+          "id": "cap3",
+          "text": "Capybaras can hold their breath underwater for up to five minutes!"
         },
         {
-          "id": "539e9f163d9c",
-          "text": "When scientists first saw a platypus specimen, they thought it was a hoax! It was sewn together from different animals!"
+          "id": "cap4",
+          "text": "They eat grass and plants, spending hours chewing every single day!"
         }
       ]
     },
     {
-      "name": "Wolves",
+      "name": "Cats",
       "facts": [
         {
-          "id": "c2e2dd5530a1",
-          "text": "A wolf's howl can be heard up to 10 miles away! They howl to communicate with pack members!"
+          "id": "58dc808efbf2",
+          "text": "Cats spend 70% of their lives sleeping! That's about 13 to 16 hours a day!"
         },
         {
-          "id": "f77a6e845cd2",
-          "text": "Wolves can run up to 40 miles per hour! They can maintain this speed for miles!"
+          "id": "62c86c777987",
+          "text": "A cat's purr vibrates at a frequency that helps heal bones and reduce pain!"
         },
         {
-          "id": "33cfc52d4256",
-          "text": "Each wolf has a unique howl! Scientists can identify individual wolves by their howl alone!"
+          "id": "4eba17c2d906",
+          "text": "Cats have over 20 different vocalizations! They can make over 100 different sounds!"
         },
         {
-          "id": "29b266473002",
-          "text": "Wolves mate for life! A bonded pair will only breed with each other until one dies!"
+          "id": "b87e9b08bbed",
+          "text": "A cat can jump up to six times its body length in a single leap! That's like a human jumping 30 feet!"
         }
       ]
     },
     {
-      "name": "Bats",
+      "name": "Crows",
       "facts": [
         {
-          "id": "996dfcaa2c1c",
-          "text": "Bats are the only mammals that can truly fly! Their wingspan can reach up to 6 feet in some species!"
+          "id": "0077fb44aeab",
+          "text": "Crows can recognize and remember human faces for years! They can tell if someone is a friend or foe!"
         },
         {
-          "id": "705e60679481",
-          "text": "Little brown bats can eat up to 1,000 mosquitoes in an hour! They're essential for pest control!"
+          "id": "6f60fb71fddd",
+          "text": "A crow's brain is relatively the same size as a chimpanzee brain! They're among the smartest birds!"
         },
         {
-          "id": "ebbdc5a7e600",
-          "text": "Bats navigate in complete darkness using echolocation! They emit sounds that bounce back as echoes!"
+          "id": "946266bf2813",
+          "text": "Crows use tools to get food! They can bend wire into hooks and drop pebbles to raise water levels!"
         },
         {
-          "id": "b89478b35b3e",
-          "text": "A bat can live for over 30 years! Some species can survive temperatures below freezing while hibernating!"
+          "id": "290847083ed4",
+          "text": "Some crows hold funerals! They gather around dead crows to learn about dangers in their area!"
         }
       ]
     },
     {
-      "name": "Rhinoceros",
+      "name": "Dogs",
       "facts": [
         {
-          "id": "09ac3ee2eafc",
-          "text": "Rhino horns are made of keratin, the same protein as human fingernails and hair! They never stop growing!"
+          "id": "d038eabcdb40",
+          "text": "Dogs have 10,000 times better sense of smell than humans! Some dogs can detect diseases like cancer!"
         },
         {
-          "id": "2399d64c6e8d",
-          "text": "Despite their massive size, rhinos can run up to 40 miles per hour! They're surprisingly fast!"
+          "id": "345c959dfdcb",
+          "text": "A dog's nose print is as unique as a human fingerprint! No two dogs have the same nose pattern!"
         },
         {
-          "id": "140a904c80d5",
-          "text": "Rhinos have poor eyesight but an excellent sense of smell! They can detect predators from miles away!"
+          "id": "a5fc2f5fb2e0",
+          "text": "Dogs can understand up to 250 words and gestures! The average dog is as smart as a two-year-old child!"
         },
         {
-          "id": "2e5ee29268fb",
-          "text": "A group of rhinos is called a crash! They often graze alongside birds that eat parasites on their skin!"
+          "id": "ee81815f8a59",
+          "text": "When dogs wag their tail to the right, it usually means they're happy! To the left can indicate fear!"
         }
       ]
     },
     {
-      "name": "Zebras",
+      "name": "Dolphins",
       "facts": [
         {
-          "id": "fb05a76d3768",
-          "text": "Every zebra has a unique stripe pattern! Like human fingerprints, no two zebras are exactly alike!"
+          "id": "95324ba647c9",
+          "text": "Dolphins have two stomachs \u2014 one for food and one for digestion! They also use tools like sponges to protect their snouts!"
         },
         {
-          "id": "72b2708f0da2",
-          "text": "Zebras sleep standing up! They only lie down when they're in a safe area with other zebras watching!"
+          "id": "fccbf43caded",
+          "text": "Dolphins can recognize themselves in mirrors, which shows they have self-awareness similar to humans and great apes!"
         },
         {
-          "id": "97f9e39b81c5",
-          "text": "A zebra's mane is entirely black! Unlike horses, zebras have erect manes that stand straight up!"
+          "id": "74d442dd2dd5",
+          "text": "A dolphin can hold its breath for up to 10 minutes! They breathe through a blowhole on top of their head!"
         },
         {
-          "id": "4795fd62f8b0",
-          "text": "Zebras can run up to 40 miles per hour! They use a bouncing gait called a trot when not fleeing predators!"
-        }
-      ]
-    },
-    {
-      "name": "Leopards",
-      "facts": [
-        {
-          "id": "b17e8b67b2e9",
-          "text": "Leopards can drag prey three times their own body weight into trees! They store food away from scavengers!"
-        },
-        {
-          "id": "4b2bbedb3f6a",
-          "text": "A leopard's spots are called rosettes because they look like roses! Each leopard has a unique pattern!"
-        },
-        {
-          "id": "0a0451b75f36",
-          "text": "Leopards are incredibly adaptable! They live in forests, mountains, grasslands, and even deserts!"
-        },
-        {
-          "id": "dc66226e85d5",
-          "text": "Leopards can leap 20 feet forward in a single bound! They're one of the most athletic big cats!"
-        }
-      ]
-    },
-    {
-      "name": "Snowy Owls",
-      "facts": [
-        {
-          "id": "91cc33030cdc",
-          "text": "Snowy owls have feathers covering even their toes! This helps them survive in Arctic temperatures of -50\u00b0C!"
-        },
-        {
-          "id": "55f0aec8e2e5",
-          "text": "Unlike most owls, snowy owls are primarily diurnal! They hunt during the day because the sun never sets in summer!"
-        },
-        {
-          "id": "fbf67b0e28e4",
-          "text": "Snowy owls can swallow small prey whole! They cough up pellets containing bones and fur!"
-        },
-        {
-          "id": "eeb3ddc34caa",
-          "text": "Male snowy owls get whiter with age! Females always have more dark feathers, even when fully mature!"
+          "id": "5190060aa755",
+          "text": "Dolphins sleep with one eye open! Half of their brain stays awake to watch for predators and keep breathing!"
         }
       ]
     },
@@ -1030,23 +274,149 @@
       ]
     },
     {
-      "name": "Alligators",
+      "name": "Elephants",
       "facts": [
         {
-          "id": "44a791c56c51",
-          "text": "Alligators can go through 3,000 teeth in their lifetime! They replace lost teeth continuously!"
+          "id": "66c4038b31d8",
+          "text": "Elephants are the only animals that can't jump! But they're excellent swimmers despite their massive size!"
         },
         {
-          "id": "ccbe7276d24f",
-          "text": "An alligator's bite force is over 2,000 pounds! That's one of the strongest bites in the animal kingdom!"
+          "id": "3de823ec6c92",
+          "text": "An elephant's trunk has over 40,000 muscles! It's more dexterous than human fingers!"
         },
         {
-          "id": "b2405df16a53",
-          "text": "Alligators can hold their breath for over an hour! They slow their heart rate to conserve oxygen!"
+          "id": "9fdcee7dce2e",
+          "text": "Elephants can recognize themselves in mirrors, showing high intelligence and self-awareness!"
         },
         {
-          "id": "4be23cb84f4f",
-          "text": "Baby alligators make a chirping sound before hatching! Mother alligators gently crack the eggs in their mouths!"
+          "id": "9900164a8174",
+          "text": "Baby elephants suck their trunks for comfort, similar to how human babies suck their thumbs!"
+        }
+      ]
+    },
+    {
+      "name": "Emperor Penguins",
+      "facts": [
+        {
+          "id": "emp1",
+          "text": "Emperor penguins are the tallest penguins, reaching nearly 4 feet tall!"
+        },
+        {
+          "id": "emp2",
+          "text": "Males huddle together in groups of thousands to survive Antarctic blizzards!"
+        },
+        {
+          "id": "emp3",
+          "text": "The male incubates the egg on his feet for over two months without eating!"
+        },
+        {
+          "id": "emp4",
+          "text": "Emperor penguins can dive deeper than any other bird \u2014 over 1,800 feet!"
+        }
+      ]
+    },
+    {
+      "name": "Fennec Foxes",
+      "facts": [
+        {
+          "id": "fen1",
+          "text": "Fennec foxes have enormous ears that help them stay cool in the desert!"
+        },
+        {
+          "id": "fen2",
+          "text": "Their ears can be half as long as their entire body!"
+        },
+        {
+          "id": "fen3",
+          "text": "Fennec foxes are the smallest foxes in the world!"
+        },
+        {
+          "id": "fen4",
+          "text": "They can survive without free water, getting moisture from their food!"
+        }
+      ]
+    },
+    {
+      "name": "Flamingos",
+      "facts": [
+        {
+          "id": "2b2d9e14359e",
+          "text": "Flamingos can run up to 35 miles per hour on the ground and prefer living in large groups of thousands!"
+        },
+        {
+          "id": "df5cb2370ac0",
+          "text": "Flamingos are pink because of the beta-carotene in the shrimp and algae they eat!"
+        },
+        {
+          "id": "1dfdeed0d01c",
+          "text": "A flamingo can only eat with its head upside down! Their special beaks are designed for this!"
+        },
+        {
+          "id": "c772fa5ebcbf",
+          "text": "Flamingos are one of the few birds that can actually swim! Many other birds avoid deep water!"
+        }
+      ]
+    },
+    {
+      "name": "Foxes",
+      "facts": [
+        {
+          "id": "d983d8ff0980",
+          "text": "A fox's pupils are vertical, similar to cats! This helps them hunt small prey more effectively!"
+        },
+        {
+          "id": "c99e877bd32c",
+          "text": "Foxes can hear a mouse moving under 3 feet of snow! They use a special pouncing technique to catch it!"
+        },
+        {
+          "id": "faa2abe05b65",
+          "text": "Red foxes can adapt to almost any habitat! They live on every continent except Antarctica!"
+        },
+        {
+          "id": "87bab2b732dc",
+          "text": "A fox's tail is called a brush! It helps them balance and also keeps them warm during cold nights!"
+        }
+      ]
+    },
+    {
+      "name": "Giraffes",
+      "facts": [
+        {
+          "id": "844a7fa3de8d",
+          "text": "A giraffe's tongue is 20 inches long and completely black! This protects it from sunburn while eating!"
+        },
+        {
+          "id": "4662327afeae",
+          "text": "Giraffes only need 30 minutes of sleep per day! They often sleep standing up in short bursts!"
+        },
+        {
+          "id": "02f7f50f8c57",
+          "text": "Each giraffe has a unique pattern of spots, just like human fingerprints! No two giraffes are alike!"
+        },
+        {
+          "id": "f99658494ce9",
+          "text": "A giraffe's kick is so powerful it can kill a lion! They use their long necks as weapons too!"
+        }
+      ]
+    },
+    {
+      "name": "Hedgehogs",
+      "facts": [
+        {
+          "id": "hed1",
+          "text": "Hedgehogs have about 5,000 spines covering their back!"
+        },
+        {
+          "id": "hed2",
+          "text": "They can run up to 6 miles per hour when threatened!"
+        },
+        {
+          "id": "hed3",
+          "text": "Baby hedgehogs are called hoglets and are born with soft spines!"
+        },
+        {
+          "id": "hed4",
+          "text": "They stay clean and rarely get sick \u2014 they're remarkably resilient!"
         }
       ]
     },
@@ -1072,23 +442,569 @@
       ]
     },
     {
-      "name": "Crocodiles",
+      "name": "Horses",
       "facts": [
         {
-          "id": "7611d82159c5",
-          "text": "Crocodiles can hold their breath for over an hour! They slow their heartbeat to 2-3 beats per minute underwater!"
+          "id": "d649c0c28bf0",
+          "text": "Horses can sleep both lying down and standing up! They have a locking system in their legs!"
         },
         {
-          "id": "7f7cf5903106",
-          "text": "A crocodile's bite force is over 3,700 pounds! Even stronger than the T-Rex dinosaur!"
+          "id": "4a93e110d3c4",
+          "text": "A horse's memory is extremely long! They can remember places and other horses for many years!"
         },
         {
-          "id": "efa0930cc73d",
-          "text": "Crocodiles can climb trees! Young crocodiles especially climb to bask in the sun for warmth!"
+          "id": "a6171f617419",
+          "text": "Horses have 10 different muscles in their ears! They can rotate their ears 180 degrees independently!"
         },
         {
-          "id": "3f03967a4ffc",
-          "text": "Crocodiles have the most sophisticated heart in the animal kingdom! They can redirect blood flow to their lungs when underwater!"
+          "id": "3cd42c44e686",
+          "text": "Newborn foals can run within a few hours of being born! This is essential for escaping predators!"
+        }
+      ]
+    },
+    {
+      "name": "Hummingbirds",
+      "facts": [
+        {
+          "id": "1b6d26c1fddf",
+          "text": "Hummingbirds are the only birds that can fly backwards! Their unique ball-and-socket shoulder joints allow this!"
+        },
+        {
+          "id": "ac4497f6d4b8",
+          "text": "A hummingbird's heart beats over 1,200 times per minute during flight! At rest it's still 250 beats per minute!"
+        },
+        {
+          "id": "54d8984ec947",
+          "text": "Hummingbirds eat twice their body weight in nectar every day! They visit hundreds of flowers daily!"
+        },
+        {
+          "id": "007b527c051c",
+          "text": "A hummingbird's brain is 4.2% of its body weight, the largest proportion of any bird! They can remember every flower they've visited!"
+        }
+      ]
+    },
+    {
+      "name": "Kangaroos",
+      "facts": [
+        {
+          "id": "fd2626c6ed50",
+          "text": "A baby kangaroo is called a joey and it's only the size of a jellybean when born!"
+        },
+        {
+          "id": "6d78883e1391",
+          "text": "Kangaroos can't walk backwards! They only move forward, which is why they're on Australia's coat of arms!"
+        },
+        {
+          "id": "36794a67c4fa",
+          "text": "When kangaroos hop, they use less energy than a cat or dog running at the same speed!"
+        },
+        {
+          "id": "ec8d2e2a5865",
+          "text": "A group of kangaroos is called a mob! The mob is led by the largest male, called a boomer!"
+        }
+      ]
+    },
+    {
+      "name": "Koalas",
+      "facts": [
+        {
+          "id": "9988aef490a0",
+          "text": "Koalas have fingerprints almost identical to human fingerprints! Even experts can mistake them!"
+        },
+        {
+          "id": "d55026eec6d2",
+          "text": "Koalas sleep up to 22 hours a day! Their diet of eucalyptus leaves gives them very little energy!"
+        },
+        {
+          "id": "de7f6b32683e",
+          "text": "Baby koalas eat their mother's poop! This helps them develop the bacteria needed to digest eucalyptus!"
+        },
+        {
+          "id": "3b0e9cc5fd15",
+          "text": "Koalas are marsupials, meaning they carry their babies in pouches! The pouch opens toward the mother's back!"
+        }
+      ]
+    },
+    {
+      "name": "Leopards",
+      "facts": [
+        {
+          "id": "b17e8b67b2e9",
+          "text": "Leopards can drag prey three times their own body weight into trees! They store food away from scavengers!"
+        },
+        {
+          "id": "4b2bbedb3f6a",
+          "text": "A leopard's spots are called rosettes because they look like roses! Each leopard has a unique pattern!"
+        },
+        {
+          "id": "0a0451b75f36",
+          "text": "Leopards are incredibly adaptable! They live in forests, mountains, grasslands, and even deserts!"
+        },
+        {
+          "id": "dc66226e85d5",
+          "text": "Leopards can leap 20 feet forward in a single bound! They're one of the most athletic big cats!"
+        }
+      ]
+    },
+    {
+      "name": "Llamas",
+      "facts": [
+        {
+          "id": "0a7d757576de",
+          "text": "Llamas are very clean animals! They tend to use the same spot as a toilet, away from where they eat!"
+        },
+        {
+          "id": "036742ba9eb3",
+          "text": "A llama can carry up to 30% of its body weight for up to 15 miles! They're perfect pack animals!"
+        },
+        {
+          "id": "2ab61e087317",
+          "text": "Llamas are social and get lonely if kept alone! They often bond closely with other llamas!"
+        },
+        {
+          "id": "893cc6c959b3",
+          "text": "Llamas communicate by humming! Each hum can mean something different, from hunger to contentment!"
+        }
+      ]
+    },
+    {
+      "name": "Meerkats",
+      "facts": [
+        {
+          "id": "mee1",
+          "text": "Meerkats are immune to certain venoms and can eat scorpions safely!"
+        },
+        {
+          "id": "mee2",
+          "text": "They stand upright to watch for predators \u2014 taking turns being sentries!"
+        },
+        {
+          "id": "mee3",
+          "text": "A meerkat clan can have up to 50 members working together!"
+        },
+        {
+          "id": "mee4",
+          "text": "Babies start learning to hunt within weeks of being born!"
+        }
+      ]
+    },
+    {
+      "name": "Narwhals",
+      "facts": [
+        {
+          "id": "d66889051dde",
+          "text": "The narwhal's spiral tusk is actually a tooth! It can grow up to 10 feet long!"
+        },
+        {
+          "id": "b26f20adaf70",
+          "text": "Narwhals can dive over a mile deep! They hold their breath for up to 25 minutes!"
+        },
+        {
+          "id": "0645e03322ba",
+          "text": "Narwhals can make over 30 different sounds! They use clicks, whistles, and knocks to communicate!"
+        },
+        {
+          "id": "8d6ddf3e9c7c",
+          "text": "The Inuit people call narwhals the unicorns of the sea! Their tusk was once sold as unicorn horns!"
+        }
+      ]
+    },
+    {
+      "name": "Octopuses",
+      "facts": [
+        {
+          "id": "3198e4b22c2d",
+          "text": "Octopuses have three hearts and blue blood! Two hearts pump blood to the gills, one to the body!"
+        },
+        {
+          "id": "9e7a8ae5d44e",
+          "text": "An octopus can change its color and texture in less than a second to blend with its surroundings!"
+        },
+        {
+          "id": "72b38db95b30",
+          "text": "Octopuses have nine brains! One central brain and a mini brain in each of their eight arms!"
+        },
+        {
+          "id": "fb662f1be90e",
+          "text": "They can squeeze through any gap larger than their beak, which is the only hard part of their body!"
+        }
+      ]
+    },
+    {
+      "name": "Otters",
+      "facts": [
+        {
+          "id": "7008fa4b205c",
+          "text": "Sea otters hold hands while sleeping so they don't drift apart! They're incredibly social creatures!"
+        },
+        {
+          "id": "5d9c27d77065",
+          "text": "Otters have the densest fur of any mammal, with up to a million hairs per square inch!"
+        },
+        {
+          "id": "b0bdb7807ae5",
+          "text": "A group of otters in water is called a raft! The largest raft can have over 1,000 otters!"
+        },
+        {
+          "id": "9bef359f988d",
+          "text": "Otters can close their ears and nose underwater! They can stay submerged for nearly 5 minutes!"
+        }
+      ]
+    },
+    {
+      "name": "Owls",
+      "facts": [
+        {
+          "id": "64041bbab158",
+          "text": "Owls can rotate their heads 270 degrees! They can't move their eyes because they're shaped like tubes!"
+        },
+        {
+          "id": "299498a42692",
+          "text": "A owl's eyes are fixed in place, so they have to turn their entire head to look around!"
+        },
+        {
+          "id": "b0c972b8dd66",
+          "text": "Some owl species can fly in complete silence! Their wing feathers have special edges that muffle sound!"
+        },
+        {
+          "id": "bb9e5a09e423",
+          "text": "Owls swallow their prey whole and later cough up pellets containing the bones and fur they couldn't digest!"
+        }
+      ]
+    },
+    {
+      "name": "Pandas",
+      "facts": [
+        {
+          "id": "ed44d5ac88ee",
+          "text": "Despite being called carnivores, 99% of a panda's diet is bamboo! They can't properly digest meat!"
+        },
+        {
+          "id": "14b7ef608130",
+          "text": "Giant pandas spend 12 hours every day eating bamboo! They consume up to 38 kg daily!"
+        },
+        {
+          "id": "e466879a9ba6",
+          "text": "A newborn panda is about the size of a stick of butter! Adults weigh up to 250 pounds!"
+        },
+        {
+          "id": "4274185b710e",
+          "text": "Pandas have a special wrist bone that acts like a thumb! It helps them grip bamboo stalks!"
+        }
+      ]
+    },
+    {
+      "name": "Pangolins",
+      "facts": [
+        {
+          "id": "pan1",
+          "text": "Pangolins are the only mammals covered entirely in protective scales!"
+        },
+        {
+          "id": "pan2",
+          "text": "When threatened, they curl into a ball and their scales can cut predators!"
+        },
+        {
+          "id": "pan3",
+          "text": "Their tongues can be longer than their entire body \u2014 up to 16 inches!"
+        },
+        {
+          "id": "pan4",
+          "text": "Pangolins eat 20,000 insects every single night!"
+        }
+      ]
+    },
+    {
+      "name": "Parrots",
+      "facts": [
+        {
+          "id": "ec7710e0d21c",
+          "text": "Parrots have curved beaks specially adapted for cracking nuts and seeds! They can exert incredible force!"
+        },
+        {
+          "id": "804ec679e477",
+          "text": "Some parrots can live over 80 years! The oldest known parrot was a macaw named Cookie, who lived to 82!"
+        },
+        {
+          "id": "f2e665c8b904",
+          "text": "Parrots are one of the few animals that can dance to music! They sync their movements to rhythm naturally!"
+        },
+        {
+          "id": "b64ef839798f",
+          "text": "A parrot's tongue is thick and fleshy! It helps them mimic human speech by shaping sound in their throat!"
+        }
+      ]
+    },
+    {
+      "name": "Penguins",
+      "facts": [
+        {
+          "id": "f00c3024a9bc",
+          "text": "Emperor penguins can dive deeper than any other bird, reaching depths of over 1,800 feet!"
+        },
+        {
+          "id": "9f8570b287ee",
+          "text": "A emperor penguin egg sits on the father's feet for two months! He doesn't eat and endures temperatures of -50\u00b0C!"
+        },
+        {
+          "id": "874e0eb755b7",
+          "text": "Penguins can drink salt water because they have a special gland that filters salt from their blood!"
+        },
+        {
+          "id": "19e9a8dbb079",
+          "text": "The Galapagos penguin is the only penguin species found north of the equator! They live in tropical waters!"
+        }
+      ]
+    },
+    {
+      "name": "Polar Bears",
+      "facts": [
+        {
+          "id": "87ec66a01bc6",
+          "text": "Polar bear fur isn't actually white! Each hair shaft is transparent and reflects light to appear white!"
+        },
+        {
+          "id": "e8f70f562412",
+          "text": "A polar bear's skin is black! This helps them absorb and retain heat from the sun!"
+        },
+        {
+          "id": "a092c75bf008",
+          "text": "Polar bears can swim for days without stopping! They've been known to swim over 200 miles!"
+        },
+        {
+          "id": "6146b69a5ea9",
+          "text": "Their fur is so insulated that polar bears can overheat in summer! They often rest in shade or snow!"
+        }
+      ]
+    },
+    {
+      "name": "Pygmy Hippos",
+      "facts": [
+        {
+          "id": "pyg1",
+          "text": "Pygmy hippos are about one-tenth the size of regular hippos!"
+        },
+        {
+          "id": "pyg2",
+          "text": "They spend most of their time on land, unlike their larger cousins!"
+        },
+        {
+          "id": "pyg3",
+          "text": "Pygmy hippos can hold their breath underwater for up to 8 minutes!"
+        },
+        {
+          "id": "pyg4",
+          "text": "They secrete a red fluid that acts as natural sunscreen on their skin!"
+        }
+      ]
+    },
+    {
+      "name": "Quokkas",
+      "facts": [
+        {
+          "id": "quok1",
+          "text": "Quokkas are known as the happiest animals on Earth because they always appear to be smiling!"
+        },
+        {
+          "id": "quok2",
+          "text": "Baby quokkas are called joeys, just like kangaroos!"
+        },
+        {
+          "id": "quok3",
+          "text": "Quokkas can survive in the Australian Outback by storing fat in their tails for food!"
+        },
+        {
+          "id": "quok4",
+          "text": "Despite being curious and friendly, quokkas can bite if they feel threatened!"
+        }
+      ]
+    },
+    {
+      "name": "Red Pandas",
+      "facts": [
+        {
+          "id": "redp1",
+          "text": "Red pandas are more closely related to raccoons than to giant pandas!"
+        },
+        {
+          "id": "redp2",
+          "text": "They use their bushy tails to balance and cover themselves in cold weather!"
+        },
+        {
+          "id": "redp3",
+          "text": "Red pandas spend most of their lives in trees and are excellent climbers!"
+        },
+        {
+          "id": "redp4",
+          "text": "They eat about 20,000 bamboo leaves every single day!"
+        }
+      ]
+    },
+    {
+      "name": "Seals",
+      "facts": [
+        {
+          "id": "c4c78484fb72",
+          "text": "Elephant seals can hold their breath for 2 hours! They dive deeper than almost any other marine mammal!"
+        },
+        {
+          "id": "cb4ddf532558",
+          "text": "Seals have a layer of blubber under their skin that can be up to 6 inches thick!"
+        },
+        {
+          "id": "b0bb5c801279",
+          "text": "A seal's whiskers are incredibly sensitive! They can detect vibrations in the water from fish swimming nearby!"
+        },
+        {
+          "id": "b2aa2c983418",
+          "text": "Leopard seals can reach speeds of 25 mph underwater! They're one of the fastest seals in the ocean!"
+        }
+      ]
+    },
+    {
+      "name": "Sharks",
+      "facts": [
+        {
+          "id": "15b18058880b",
+          "text": "Sharks have been on Earth for over 400 million years! They existed before trees and dinosaurs!"
+        },
+        {
+          "id": "4c0d13359432",
+          "text": "Great white sharks can detect a single drop of blood in 25 gallons of water! That's incredible sensitivity!"
+        },
+        {
+          "id": "e66024936ef5",
+          "text": "Most sharks never stop swimming! If they stop, they sink because they don't have swim bladders!"
+        },
+        {
+          "id": "8b3eedec8a5d",
+          "text": "Sharks can go through up to 30,000 teeth in their lifetime! They replace teeth every few weeks!"
+        }
+      ]
+    },
+    {
+      "name": "Sloths",
+      "facts": [
+        {
+          "id": "09362e28d4ca",
+          "text": "Sloths can hold their breath for up to 40 minutes! They slow their heart rate to survive underwater!"
+        },
+        {
+          "id": "ffe1056c0f36",
+          "text": "A sloth's stomach takes up a third of its body weight and can take 30 days to digest a single leaf!"
+        },
+        {
+          "id": "d40dd9a9b5c6",
+          "text": "Sloths descend from their trees only once a week to poop! They lose a third of their body weight in one trip!"
+        },
+        {
+          "id": "b6c5815fb506",
+          "text": "Despite being slow on land, sloths are surprisingly strong swimmers! They can hold their breath for 40 minutes!"
+        }
+      ]
+    },
+    {
+      "name": "Snowy Owls",
+      "facts": [
+        {
+          "id": "91cc33030cdc",
+          "text": "Snowy owls have feathers covering even their toes! This helps them survive in Arctic temperatures of -50\u00b0C!"
+        },
+        {
+          "id": "55f0aec8e2e5",
+          "text": "Unlike most owls, snowy owls are primarily diurnal! They hunt during the day because the sun never sets in summer!"
+        },
+        {
+          "id": "fbf67b0e28e4",
+          "text": "Snowy owls can swallow small prey whole! They cough up pellets containing bones and fur!"
+        },
+        {
+          "id": "eeb3ddc34caa",
+          "text": "Male snowy owls get whiter with age! Females always have more dark feathers, even when fully mature!"
+        }
+      ]
+    },
+    {
+      "name": "Tarsiers",
+      "facts": [
+        {
+          "id": "tar1",
+          "text": "Tarsiers have enormous eyes that are each bigger than their entire brain!"
+        },
+        {
+          "id": "tar2",
+          "text": "They can rotate their heads 180 degrees in both directions like an owl!"
+        },
+        {
+          "id": "tar3",
+          "text": "Tarsiers are the only completely carnivorous primates!"
+        },
+        {
+          "id": "tar4",
+          "text": "They can leap up to 10 feet in a single bound using their powerful legs!"
+        }
+      ]
+    },
+    {
+      "name": "Tigers",
+      "facts": [
+        {
+          "id": "c662f32c2689",
+          "text": "A tiger's night vision is 6 times better than a human's! They hunt mostly during dawn and dusk!"
+        },
+        {
+          "id": "847dcb6164b5",
+          "text": "No two tigers have the same stripe pattern! Like human fingerprints, each tiger is completely unique!"
+        },
+        {
+          "id": "fc2488f8ccfe",
+          "text": "A tiger's roar can be heard from 2 miles away! It communicates territorial boundaries to other tigers!"
+        },
+        {
+          "id": "fca68c43928a",
+          "text": "Tigers are excellent swimmers! Unlike most cats, they love the water and can swim for miles!"
+        }
+      ]
+    },
+    {
+      "name": "Turtles",
+      "facts": [
+        {
+          "id": "b0d0cf7036f6",
+          "text": "A turtle's shell is part of its skeleton! It's made of over 50 bones including ribs and spine!"
+        },
+        {
+          "id": "4c8400d13dba",
+          "text": "Some sea turtles can hold their breath for up to 7 hours while sleeping underwater!"
+        },
+        {
+          "id": "64072bdc8c4d",
+          "text": "The sex of some turtle babies is determined by temperature! Cooler nests produce more males!"
+        },
+        {
+          "id": "17f8fc0dff02",
+          "text": "Turtles have existed for over 200 million years! They outlived dinosaurs and many other ancient creatures!"
+        }
+      ]
+    },
+    {
+      "name": "Wolves",
+      "facts": [
+        {
+          "id": "c2e2dd5530a1",
+          "text": "A wolf's howl can be heard up to 10 miles away! They howl to communicate with pack members!"
+        },
+        {
+          "id": "f77a6e845cd2",
+          "text": "Wolves can run up to 40 miles per hour! They can maintain this speed for miles!"
+        },
+        {
+          "id": "33cfc52d4256",
+          "text": "Each wolf has a unique howl! Scientists can identify individual wolves by their howl alone!"
+        },
+        {
+          "id": "29b266473002",
+          "text": "Wolves mate for life! A bonded pair will only breed with each other until one dies!"
         }
       ]
     }
