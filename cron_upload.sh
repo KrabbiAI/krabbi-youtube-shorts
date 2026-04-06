@@ -136,7 +136,8 @@ for q in searches:
         fn = f"{STOCK}/pexels_{vid}.mp4"
         if vid in used_ids or os.path.exists(fn):
             continue
-        vid_name = v.get("name", "").lower()
+        
+        vid_name = v.get("url", "").lower()
         if normalized not in vid_name:
             continue  # skip if animal not in Pexels video title
         if dur >= needed:
@@ -189,7 +190,8 @@ for q in searches:
         fn = f"{STOCK}/pexels_{vid}.mp4"
         if vid in used_ids or os.path.exists(fn):
             continue
-        vid_name = v.get("name", "").lower()
+        
+        vid_name = v.get("url", "").lower()
         if normalized not in vid_name:
             continue  # skip if animal not in Pexels video title
         if dur >= needed:
