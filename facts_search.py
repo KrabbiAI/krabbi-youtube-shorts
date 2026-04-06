@@ -179,11 +179,15 @@ if __name__ == "__main__":
     print(f"Selected {len(facts)} fact(s): {[f[:50]+'...' for f in facts]}")
     print(f"Animals: {', '.join(animal_names)}")
     
-    # Build narration
+    # Build narration with engaging hook
     if len(facts) == 1:
-        narration = f"Did you know? {facts[0]} Like and subscribe for more daily animal facts!"
+        # Single fact: hook first, then the detail
+        narration = f"Here's something incredible about {animal_names[0].lower()}s. {facts[0]} Subscribe for more amazing animal facts!"
     else:
-        narration = "Did you know? " + " And did you know? ".join(facts) + " Like and subscribe for more daily animal facts!"
+        # Multiple facts: hook for first, detail for rest
+        hook = f"Wait until you hear this about {animal_names[0].lower()}s."
+        rest = " And here's another amazing fact. ".join(facts)
+        narration = f"{hook} {rest} Subscribe for more incredible animal facts!"
     
     print(f"Narration: {narration}")
     
