@@ -89,7 +89,17 @@ skip_animals_pl = {'puppies': 'puppy', 'kittens': 'kitten', 'bunnies': 'bunny',
                 'penguins': 'penguin', 'seals': 'seal', 'koalas': 'koala',
                 'pandas': 'panda', 'sloths': 'sloth', 'quokkas': 'quokka',
                 'gliders': 'glider', 'ferrets': 'ferret'}
-last_animal = None
+
+# Load recent animals (last 10) from persistent file
+recent_file = f"{STOCK}/../recent_animals.txt"
+recent_animals = []
+if os.path.exists(recent_file):
+    with open(recent_file) as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                recent_animals.extend([a.strip() for a in line.split(',') if a.strip()])
+print(f"Recent animals (last {len(recent_animals)}): {recent_animals[-5:]}")
 
 def dl(vid, fn):
     r = requests.get(f"https://api.pexels.com/videos/videos/{vid}", headers={"Authorization": API})
@@ -115,8 +125,8 @@ for q in searches:
     words = q.lower().split()
     animal = words[-1] if words else ''
     normalized = skip_animals_pl.get(animal, animal)
-    if normalized == last_animal:
-        continue  # skip duplicate animal
+    if normalized in recent_animals:
+        continue  # skip animals from last 10 uploads
     last_animal = normalized
     
     r = requests.get("https://api.pexels.com/videos/search", params={"query": q, "per_page": 15, "page": random.randint(1,5)}, headers={"Authorization": API}).json()
@@ -133,6 +143,11 @@ for q in searches:
                 # Save to used_videos.txt with timestamp (vid,timestamp)
                 with open(USED_FILE, 'a') as f:
                     f.write(f"{vid},{time.time()}\n")
+                # Track animal in recent list
+                recent_animals.append(normalized)
+                recent_animals = recent_animals[-10:]
+                with open(recent_file, "w") as f:
+                    f.write(",".join(recent_animals))
                 print(fn)
                 exit(0)
             else:
@@ -160,7 +175,7 @@ for q in searches:
     words = q.lower().split()
     animal = words[-1] if words else ''
     normalized = skip_animals_pl.get(animal, animal)
-    if normalized == last_animal:
+    if normalized in recent_animals:
         continue
     last_animal = normalized
 
@@ -177,6 +192,11 @@ for q in searches:
                 print("OK")
                 with open(USED_FILE, 'a') as f:
                     f.write(f"{vid},{time.time()}\n")
+                # Track animal in recent list
+                recent_animals.append(normalized)
+                recent_animals = recent_animals[-10:]
+                with open(recent_file, "w") as f:
+                    f.write(",".join(recent_animals))
                 print(fn)
                 exit(0)
             else:
@@ -189,6 +209,42 @@ exit(1)
 PYEOF
 
     return $?
+}
+
+get_recent_animals() {
+    # Returns comma-separated last N animals used (from persisted file)
+    local file="$BASE/recent_animals.txt"
+    if [ -f "$file" ]; then
+        cat "$file" 2>/dev/null | tr ',' '\n' | head -10 | tr '\n' ',' | sed 's/,$//'
+    fi
+    echo ""
+}
+
+save_recent_animal() {
+    # Add animal to recent list (max 10, oldest removed)
+    local animal="$1"
+    local file="$BASE/recent_animals.txt"
+    local max=10
+    
+    # Read existing list
+    local list=""
+    if [ -f "$file" ]; then
+        list=$(cat "$file" 2>/dev/null)
+    fi
+    
+    # Remove if already exists (to move it to front), then add
+    new_list="${animal}"
+    count=1
+    IFS=',' read -ra EXISTING <<< "$list"
+    for a in "${EXISTING[@]}"; do
+        a=$(echo "$a" | xargs)
+        if [ -n "$a" ] && [ "$a" != "$animal" ] && [ $count -lt $max ]; then
+            new_list="${new_list},${a}"
+            count=$((count + 1))
+        fi
+    done
+    
+    echo "$new_list" > "$file"
 }
 
 cleanup_old_used_videos() {
