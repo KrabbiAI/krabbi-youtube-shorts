@@ -39,7 +39,7 @@ os.makedirs(STOCK, exist_ok=True)
 used_ids = set()
 if os.path.exists(USED_FILE):
     with open(USED_FILE, 'r') as f:
-        used_ids = {line.strip() for line in f if line.strip()}
+        used_ids = {line.strip().split(',')[0] for line in f if line.strip()}
 print(f"Already used: {len(used_ids)} clips")
 
 # Use animal names from TTS as primary search terms
@@ -130,9 +130,9 @@ for q in searches:
             print(f"Downloading {vid} ({dur}s >= {needed}s needed) [{q}]...", end=" ", flush=True)
             if dl(vid, fn):
                 print("OK")
-                # Save to used_videos.txt immediately
+                # Save to used_videos.txt with timestamp (vid,timestamp)
                 with open(USED_FILE, 'a') as f:
-                    f.write(vid + "\n")
+                    f.write(f"{vid},{time.time()}\n")
                 print(fn)
                 exit(0)
             else:
@@ -153,7 +153,7 @@ if len(lines) > 30:
 # Retry with cleared used_videos
 used_ids = set()
 with open(USED_FILE, 'r') as f:
-    used_ids = {line.strip() for line in f if line.strip()}
+    used_ids = {line.strip().split(',')[0] for line in f if line.strip()}
 print(f"Retry with {len(used_ids)} used clips")
 
 for q in searches:
@@ -176,7 +176,7 @@ for q in searches:
             if dl(vid, fn):
                 print("OK")
                 with open(USED_FILE, 'a') as f:
-                    f.write(vid + "\n")
+                    f.write(f"{vid},{time.time()}\n")
                 print(fn)
                 exit(0)
             else:
@@ -191,8 +191,56 @@ PYEOF
     return $?
 }
 
+cleanup_old_used_videos() {
+    # Remove used_videos.txt entries older than 30 days
+    local used_file="$BASE/used_videos.txt"
+    if [ ! -f "$used_file" ]; then return 0; fi
+    
+    python3 << PYEOF 2>> $LOG
+import time, os
+
+used_file = "$used_file"
+max_age_days = 30
+max_age_sec = max_age_days * 24 * 3600
+now = time.time()
+
+if not os.path.exists(used_file):
+    print("No used_videos.txt found")
+    exit(0)
+
+kept = []
+removed = 0
+with open(used_file, 'r') as f:
+    for line in f:
+        line = line.strip()
+        if not line:
+            continue
+        parts = line.split(',')
+        vid = parts[0]
+        # No timestamp = old entry from before this feature
+        # Treat as newly added so it expires in 30 days from now
+        if len(parts) < 2 or not parts[1].strip():
+            ts = now - (29 * 86400)  # 29 days ago — expires tomorrow
+        age_days = (now - ts) / 86400
+        if age_days < max_age_days:
+            kept.append(line)
+        else:
+            removed += 1
+            print(f"Removing old video {vid} ({age_days:.1f} days old)")
+
+with open(used_file, 'w') as f:
+    for line in kept:
+        f.write(line + '\n')
+
+print(f"Cleanup done: {removed} old entries removed, {len(kept)} kept")
+PYEOF
+}
+
 generate_and_upload() {
     num=$(date +%s)
+    
+    # Clean up used videos older than 30 days
+    cleanup_old_used_videos
     
     # 1. Generate TTS FIRST
     log "Generating TTS..."
