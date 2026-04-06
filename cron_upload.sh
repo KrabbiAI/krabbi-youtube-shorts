@@ -136,6 +136,9 @@ for q in searches:
         fn = f"{STOCK}/pexels_{vid}.mp4"
         if vid in used_ids or os.path.exists(fn):
             continue
+        vid_name = v.get("name", "").lower()
+        if normalized not in vid_name:
+            continue  # skip if animal not in Pexels video title
         if dur >= needed:
             print(f"Downloading {vid} ({dur}s >= {needed}s needed) [{q}]...", end=" ", flush=True)
             if dl(vid, fn):
@@ -186,6 +189,9 @@ for q in searches:
         fn = f"{STOCK}/pexels_{vid}.mp4"
         if vid in used_ids or os.path.exists(fn):
             continue
+        vid_name = v.get("name", "").lower()
+        if normalized not in vid_name:
+            continue  # skip if animal not in Pexels video title
         if dur >= needed:
             print(f"RETRY Downloading {vid} ({dur}s) [{q}]...", end=" ", flush=True)
             if dl(vid, fn):
